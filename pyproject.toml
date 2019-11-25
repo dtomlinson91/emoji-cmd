@@ -5,7 +5,7 @@ description = ""
 authors = ["dtomlinson <dtomlinson@panaetius.co.uk>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 emojis = "^0.5.1"
 argparse = "^1.4"
 texttable = "^1.6"
