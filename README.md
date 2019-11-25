@@ -1,5 +1,19 @@
 # Emojis on the command line
 
+<!-- MarkdownTOC -->
+
+- [Author](#author)
+- [Requires](#requires)
+- [Python requirements:](#python-requirements)
+- [Documentation](#documentation)
+- [Installation](#installation)
+    * [Easy Way](#easy-way)
+    * [Python](#python)
+- [Example](#example)
+
+<!-- /MarkdownTOC -->
+
+
 ## Author
 
 Daniel Tomlinson <dtomlinson@panaetius.co.uk>
@@ -38,13 +52,17 @@ Link here
 
 ### Easy Way
 
+Instructions here
+
 ### Python
 
 - Create a local directory `mkdir python-applications`
 - Create a virtualenv `python3 -m venv emoji`
-- Activate the environment `source emoji/src/activate`
+- Activate the environment `source emoji/bin/activate`
 - Download latest version and install `pip install emoji_cmd-1.0-py3-none-any.whl`
-- Link binary to somewhere on system path `ln -s ./emoji /usr/local/bin/emoji`
+- Link binary to somewhere on system path `ln -s $(which emoji) /usr/local/bin/emoji`
+
+Alternatively manually install using pip from `requirements.txt` and `setup.py` from the release `tar.gz`.
 
 ## Example
 
