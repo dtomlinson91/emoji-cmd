@@ -9,7 +9,10 @@
 - [Installation](#installation)
     * [Easy Way](#easy-way)
     * [Python](#python)
-- [Example](#example)
+        + [From pip](#from-pip)
+        + [From local wheel](#from-local-wheel)
+        + [From source](#from-source)
+- [Example Usage](#example-usage)
 
 <!-- /MarkdownTOC -->
 
@@ -28,43 +31,45 @@ Daniel Tomlinson <dtomlinson@panaetius.co.uk>
 argparse 1.4.0 Python command-line parsing library
 click 7.0 Composable command line interface toolkit
 emojis 0.5.1 Emojis for Python
-mypy 0.740 Optional static typing for Python
-├── mypy-extensions >=0.4.0,<0.5.0
-├── typed-ast >=1.4.0,<1.5.0
-└── typing-extensions >=3.7.4
-pytest 3.10.1 pytest: simple powerful testing with Python
-├── atomicwrites >=1.0
-├── attrs >=17.4.0
-├── colorama *
-├── more-itertools >=4.0.0
-├── pluggy >=0.7
-├── py >=1.5.0
-├── setuptools *
-└── six >=1.10.0
 texttable 1.6.2 module for creating simple ASCII tables
 ```
 
 ## Documentation
 
-Link here
+[Read the documentation](https://dtomlinson91.github.io/emoji-cmd/)
 
 ## Installation
 
 ### Easy Way
 
-Instructions here
+Run `curl -LSs https://raw.githubusercontent.com/dtomlinson91/emoji-cmd/master/install.sh | bash`
 
 ### Python
 
-- Create a local directory `mkdir python-applications`
-- Create a virtualenv `python3 -m venv emoji`
-- Activate the environment `source emoji/bin/activate`
-- Download latest version and install `pip install emoji_cmd-1.0-py3-none-any.whl`
-- Link binary to somewhere on system path `ln -s $(which emoji) /usr/local/bin/emoji`
+#### From pip
 
-Alternatively manually install using pip from [`requirements.txt`](https://github.com/dtomlinson91/emoji-cmd/blob/master/requirements.txt) and `setup.py` from the release `tar.gz`. 
+_coming soon_
 
-## Example
+#### From local wheel
+
+1. Create a local directory `mkdir python-applications`
+1. Create a virtualenv `python3 -m venv emoji`
+1. Activate the environment `source emoji/bin/activate`
+1. Download latest `.whl` version from [releases](https://github.com/dtomlinson91/emoji-cmd/releases) and install `pip install emoji_cmd-1.0-py3-none-any.whl`
+1. Link binary to PATH `ln -s $(which emoji) ~/.local/bin`
+1. Deactivate virtualenv `deactivate`
+
+#### From source
+
+1. Follow steps 1-3 above
+1. Download `requirements.txt`
+1. Download the latest `tar.gz` from [releases](https://github.com/dtomlinson91/emoji-cmd/releases) and extract.
+1. Do `pip install -r requirements.txt`
+1. Go into the extracted tar folder and do `pip install -e .`
+1. Link binary to PATH `ln -s $(which emoji) ~/.local/bin`
+1. Deactivate virtualenv `deactivate`
+
+## Example Usage
 
 `emoji --help`
 
