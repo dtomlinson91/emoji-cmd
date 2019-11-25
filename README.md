@@ -62,7 +62,7 @@ Instructions here
 - Download latest version and install `pip install emoji_cmd-1.0-py3-none-any.whl`
 - Link binary to somewhere on system path `ln -s $(which emoji) /usr/local/bin/emoji`
 
-Alternatively manually install using pip from `requirements.txt` and `setup.py` from the release `tar.gz`.
+Alternatively manually install using pip from [`requirements.txt`](https://github.com/dtomlinson91/emoji-cmd/blob/master/requirements.txt) and `setup.py` from the release `tar.gz`. 
 
 ## Example
 
